@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Para Maria Clara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        .heart-beat {
+            animation: heartbeat 1.5s ease infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .purple-glow {
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.7);
+        }
+        .message-card {
+            transition: all 0.3s ease;
+        }
+        .message-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-black text-purple-200 min-h-screen font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header with floating hearts -->
+        <header class="text-center mb-10 relative">
+            <div class="heart-beat text-6xl text-purple-500 mb-4">❤️</div>
+            <h1 class="text-4xl font-bold text-purple-400 mb-2">Maria Clara</h1>
+            <p class="text-purple-300">Minha razão de viver</p>
+
+            <div class="absolute top-0 left-10 text-xl opacity-70 floating">💜</div>
+            <div class="absolute top-5 right-10 text-xl opacity-70 floating" style="animation-delay: 0.5s;">💖</div>
+            <div class="absolute top-20 left-5 text-xl opacity-70 floating" style="animation-delay: 1s;">✨</div>
+            <div class="absolute top-15 right-5 text-xl opacity-70 floating" style="animation-delay: 1.5s;">🌸</div>
+        </header>
+
+        <!-- Main content -->
+        <main class="space-y-8">
+            <!-- Love message 1 with image left -->
+            <div class="message-card bg-gray-900 bg-opacity-70 rounded-2xl p-6 purple-glow">
+                <div class="flex items-center gap-6">
+                    <img src="c2218c9e49cdf22596952bfdfb1d6c80.jpg" alt="Anime blush" class="w-24 h-24 rounded-full object-cover" />
+                    <div>
+                        <h2 class="text-xl font-semibold text-purple-300 mb-2">Meu Amor por Você</h2>
+                        <p class="text-purple-100">Maria Clara, cada dia ao seu lado é um presente que eu não mereço, mas que agradeço ao universo por ter. Você é a luz que ilumina meus dias mais escuros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Love message 2 with image right -->
+            <div class="message-card bg-gray-900 bg-opacity-70 rounded-2xl p-6 purple-glow mt-8">
+                <div class="flex items-center gap-6 justify-between">
+                    <div class="flex-1">
+                        <h2 class="text-xl font-semibold text-purple-300 mb-2">Sua Beleza Me Encanta</h2>
+                        <p class="text-purple-100">Seus olhos são como constelações que me perco admirando, seu sorriso é meu lugar favorito no mundo inteiro. Cada detalhe seu é perfeito para mim.</p>
+                    </div>
+                    <img src="221123.gif" alt="Anime heart" class="w-24 h-24 rounded-full object-cover" />
+                </div>
+            </div>
+
+            <!-- GIF Carousel - centralizado e com imagens maiores -->
+            <div class="rounded-2xl purple-glow mt-8 mb-6">
+                <div class="flex justify-center space-x-8 p-4 bg-gray-900 bg-opacity-70 rounded-lg">
+                    <img src="1e4ea94a1bd4b91c2ad4407c6b57e4bb.jpg" alt="Cute anime couple" class="w-56 h-56 rounded-lg object-cover" />
+                    <img src="23e01b5a768fa09fb49cff86a5664ddb.jpg" alt="Anime hug" class="w-56 h-56 rounded-lg object-cover" />
+                    <img src="519f98d1e16645a6ff00b099fcfd24a5.jpg" alt="Anime kiss" class="w-56 h-56 rounded-lg object-cover" />
+                </div>
+            </div>
+
+            <!-- Special Message section ajustado com imagem maior e centralizada -->
+            <div class="message-card bg-gradient-to-br from-purple-900 to-black rounded-2xl p-6 text-purple-300 purple-glow flex items-center" style="min-height: 260px;">
+                <div style="flex: 1; padding-right: 3rem;">
+                    <h2 class="text-3xl font-bold mb-6">Para Minha Princesa</h2>
+                    <p class="text-lg mb-6">Maria Clara, você é:</p>
+                    <ul class="space-y-3 text-lg max-w-xl">
+                        <li class="flex items-center"><span class="text-purple-400 mr-3 text-2xl">✦</span> Minha melhor amiga</li>
+                        <li class="flex items-center"><span class="text-purple-400 mr-3 text-2xl">✦</span> Meu maior amor</li>
+                        <li class="flex items-center"><span class="text-purple-400 mr-3 text-2xl">✦</span> Minha inspiração diária</li>
+                        <li class="flex items-center"><span class="text-purple-400 mr-3 text-2xl">✦</span> Minha paz no caos</li>
+                        <li class="flex items-center"><span class="text-purple-400 mr-3 text-2xl">✦</span> Meu futuro e meu presente</li>
+                    </ul>
+                </div>
+                <img src="e950226db53f32b57abefbde83a25a89.jpg" alt="Anime love" class="w-48 h-48 rounded-full object-cover self-center" />
+            </div>
+
+            <!-- Countdown to special date -->
+            <div class="message-card bg-gray-900 bg-opacity-70 rounded-2xl p-6 mt-8 text-center purple-glow">
+                <h2 class="text-xl font-semibold text-purple-300 mb-4">Nosso Tempo Juntos</h2>
+                <div class="grid grid-cols-4 gap-2 text-center">
+                    <div class="bg-purple-900 bg-opacity-50 p-2 rounded-lg">
+                        <div class="text-2xl font-bold" id="days">0000</div>
+                        <div class="text-xs">Dias</div>
+                    </div>
+                    <div class="bg-purple-900 bg-opacity-50 p-2 rounded-lg">
+                        <div class="text-2xl font-bold" id="hours">00</div>
+                        <div class="text-xs">Horas</div>
+                    </div>
+                    <div class="bg-purple-900 bg-opacity-50 p-2 rounded-lg">
+                        <div class="text-2xl font-bold" id="minutes">00</div>
+                        <div class="text-xs">Minutos</div>
+                    </div>
+                    <div class="bg-purple-900 bg-opacity-50 p-2 rounded-lg">
+                        <div class="text-2xl font-bold" id="seconds">00</div>
+                        <div class="text-xs">Segundos</div>
+                    </div>
+                </div>
+                <p class="mt-4 text-purple-200">Desde que você entrou na minha vida</p>
+            </div>
+
+            <!-- Final message with animated GIF -->
+            <div class="message-card bg-gray-900 bg-opacity-70 rounded-2xl p-6 mt-8 text-center purple-glow">
+                <img src="1947b792667e7af0829d7f14ca84716e.jpg" alt="Anime couple" class="mx-auto w-32 h-32 mb-4 rounded-full object-cover" />
+                <h2 class="text-2xl font-bold text-purple-300 mb-2">Eu Te Amo</h2>
+                <p class="text-purple-100">Mais do que todas as estrelas no céu, mais do que todas as gotas no oceano, mais do que todas as palavras podem expressar.</p>
+                <div class="mt-6 text-4xl heart-beat">💜</div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-center text-purple-400 text-sm">
+            <p>Feito com todo o amor do mundo para Maria Clara</p>
+            <p class="mt-2">Você é perfeita do jeito que você é ❤️</p>
+            <div class="flex justify-center space-x-4 mt-4 text-purple-300">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-kiss-wink-heart"></i>
+                <i class="fas fa-heartbeat"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Contador desde 27 de Dezembro de 2021 - dias aumentam automaticamente na meia-noite
+        function updateCountup() {
+            const specialDate = new Date('2021-12-27T00:00:00');
+            const now = new Date();
+
+            // Zerando horas para comparar só data
+            const specialDateOnly = new Date(specialDate.getFullYear(), specialDate.getMonth(), specialDate.getDate());
+            const nowDateOnly = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+            const diffMs = nowDateOnly - specialDateOnly;
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+            // Horas, minutos e segundos atuais
+            const diffHours = now.getHours();
+            const diffMinutes = now.getMinutes();
+            const diffSeconds = now.getSeconds();
+
+            document.getElementById('days').textContent = diffDays;
+            document.getElementById('hours').textContent = String(diffHours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(diffMinutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(diffSeconds).padStart(2, '0');
+        }
+
+        setInterval(updateCountup, 1000);
+        updateCountup();
+
+        // Efeitos interativos
+        document.querySelectorAll('.message-card').forEach(card => {
+            card.addEventListener('click', function () {
+                this.classList.toggle('bg-purple-900');
+                this.classList.toggle('bg-opacity-80');
+            });
+        });
+
+        // Corações flutuantes
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '💜';
+            heart.className = 'text-xl absolute opacity-70 floating';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = '0';
+            heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createFloatingHeart, 300);
+    </script>
+</body>
+</html>
